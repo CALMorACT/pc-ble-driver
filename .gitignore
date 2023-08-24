@@ -49,3 +49,5 @@ build*/
 
 /_build*
 /build*
+
+init.sh

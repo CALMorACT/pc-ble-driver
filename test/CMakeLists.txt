@@ -89,6 +89,7 @@ function(setup_test)
         Threads::Threads
         spdlog::spdlog
         Catch2::Catch2
+        Catch2::Catch2WithMain
     )
 
     if(NOT ${TEST_NAME} STREQUAL "test_uart_boost_v2")

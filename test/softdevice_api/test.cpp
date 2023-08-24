@@ -12,7 +12,7 @@ std::ostream &nrfLogStream(std::cout);
 std::mutex nrfLogMutex;
 
 #define CATCH_CONFIG_RUNNER
-#include "catch2/catch.hpp"
+#include "catch2/catch_all.hpp"
 
 int main(int argc, char *argv[])
 {
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     auto hardwareInfo = std::string{};
     auto baudRate     = defaultBaudRate;
 
-    using namespace Catch::clara;
+    using namespace Catch::Clara;
 
     std::vector<spdlog::sink_ptr> sinks;
     sinks.push_back(std::make_shared<spdlog::sinks::stdout_color_sink_mt>());

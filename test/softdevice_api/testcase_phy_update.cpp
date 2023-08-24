@@ -36,7 +36,7 @@
  */
 
 // Test framework
-#include "catch2/catch.hpp"
+#include "catch2/catch_all.hpp"
 
 #if NRF_SD_BLE_API >= 6
 
